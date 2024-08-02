@@ -10,5 +10,16 @@
 	Enter Number<input type="Number" name="num">
 	<input type="submit" name="submit" value="submit">
 </form>
+	<?php
+if ($_REQUEST['submit']) {
+	$num=$_REQUEST['num'];
+
+	for ($i=1; $i <=10; $i++) {
+	$res=$num*$i; 
+		echo "$num X $i = $res";
+		echo "<br>";
+	}
+}
+?>
 </body>
 </html>
